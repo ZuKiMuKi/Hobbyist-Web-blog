@@ -1,0 +1,142 @@
+@import url("../css/font.css");
+:root{
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --gray: #6B7280;
+    --light: #EEE;
+    --green: #BFFF00;
+    --yellow: #EEEE9B;
+    --gny: linear-gradient(to right, var(--green), var(--yellow));
+}
+/*global class styling*/
+a{
+text-decoration: none;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+h1{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+button.btn{
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+}
+/*global class styling*/
+
+body{
+    font-family: OpenSans;
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/*nav bar*/
+.nav{
+    background: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--dark);
+}
+.collapse{
+    height: 20rem;
+}
+.nav .nav-brand{
+    padding: 1rem 1rem;
+    font-size: 2rem;
+}
+.nav .nav-items{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+}
+.nav .nav-items .nav-link:hover{
+    background-color: var(--dark);
+}
+.nav .nav-items .nav-link:hover a{
+    color: white;
+}
+.nav .social{
+    padding: 1.4rem 0rem;
+    font-size: 1.25rem;
+}
+.nav .social i{
+    padding: 0.2rem;
+}
+.nav .social i:hover{
+    color: blue;
+}
+/*The site content*/
+
+main .site-title{
+    background: url('../assets/Site\ background2.jpg');
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title h1,h3{
+    margin: .3rem;
+    color: white;
+}
+
+main .site-title .btn{
+    margin: 1.5rem;
+    background: var(--gny);
+}
+main .site-title .btn:hover{
+    background: transparent;
+    border:1px solid white;
+    color: var(--darkest);
+}
+
+main .site-bg{
+    padding-top: 10rem;
+    text-align: center;
+}
+
+
+/*viewport less then 750px*/
+
+@media only screen and (max-width: 700px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+    .nav .toggle-collapse{
+        display: initial;
+    }
+}
