@@ -31,6 +31,9 @@ button.btn{
     padding: 1rem 3rem;
     font-size: 1.2rem;
 }
+.container{
+    margin: 0 5vw;
+}
 /*global class styling*/
 
 body{
@@ -109,7 +112,11 @@ main .site-title{
     justify-content: center;
 }
 
-main .site-title h1,h3{
+main .site-title h1{
+    margin: .3rem;
+    color: white;
+}
+main .site-title h3{
     margin: .3rem;
     color: white;
 }
@@ -128,12 +135,21 @@ main .site-bg{
     padding-top: 10rem;
     text-align: center;
 }
+main .recent-post h1{
+    padding: 3rem;
+}
 
 /*Blog carousel*/
 
 main .blog{
     background: url(../assets/);
-
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+}
+main .blog h1{
+    text-align: center;
 }
 
 main .blog .blog-post{
@@ -146,13 +162,17 @@ main .blog-post .blog-content{
     text-align: center;
     width: 80%;
     margin: 3rem 2rem;
-    box-shadow: 0 15px 20px rgba (0,0,0,0.2);
-
+    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
 }
 
 main .blog-content .blog-title{
     padding: 2rem 0;
-
+    color: var(--darkest);
+}
+main .blog-content .btn-blog{
+    padding: 0.7rem 2rem;
+    background: var(--gny);
+    margin: 0.5rem;
 }
 
 /*viewport less then 750px*/
