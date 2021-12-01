@@ -10,12 +10,13 @@ $(document).ready(function(){
     /* owl carousel */
     $('.owl-carousel').owlCarousel({
         loop: true,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 3000,
-        nav: false,
+        nav: true,
+        navText: [$('.owl-navigation .owl-nav-back'),$('.owl-navigation .owl-nav-next')],
         dots: false,
         responsiveClass:true,
-    responsive:{
+        responsive:{
         0:{
             items:1,
         },

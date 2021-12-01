@@ -11,8 +11,9 @@
 }
 /*global class styling*/
 a{
-text-decoration: none;
+    text-decoration: none;
 }
+
 .flex-row{
     display: flex;
     flex-direction: row;
@@ -34,6 +35,10 @@ button.btn{
 .container{
     margin: 0 5vw;
 }
+span{
+    padding: 1rem;
+}
+
 /*global class styling*/
 
 body{
@@ -75,6 +80,9 @@ body{
     padding: 1rem 1rem;
     font-size: 2rem;
 }
+.nav .nav-brand a{
+    color: var(--darkest);
+}
 .nav .nav-items{
     list-style-type: none;
     display: flex;
@@ -85,6 +93,9 @@ body{
     padding: 1.6rem 1rem;
     font-size: 1.1rem;
     position: relative;
+}
+.nav .nav-items .nav-link a{
+    color: var(--darkest);
 }
 .nav .nav-items .nav-link:hover{
     background-color: var(--dark);
@@ -97,6 +108,7 @@ body{
     font-size: 1.25rem;
 }
 .nav .social i{
+    color: var(--darkest);
     padding: 0.2rem;
 }
 .nav .social i:hover{
@@ -105,7 +117,7 @@ body{
 /*The site content*/
 
 main .site-title{
-    background: url('../assets/Site\ background2.jpg');
+    background: url('../assets/Site\ background4.png');
     background-size: cover;
     height: 110vh;
     display: flex;
@@ -142,10 +154,9 @@ main .recent-post h1{
 /*Blog carousel*/
 
 main .blog{
-    background: url(../assets/);
     background-repeat: no-repeat;
     background-position: right;
-    height: 100vh;
+    height: 150vh;
     width: 100%;
 }
 main .blog h1{
@@ -173,6 +184,39 @@ main .blog-content .btn-blog{
     padding: 0.7rem 2rem;
     background: var(--gny);
     margin: 0.5rem;
+}
+
+section .container .owl-nav{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+/*footer*/
+footer{
+    width: 100vw;
+    position: absolute;
+}
+footer .footer-container{
+    display: flex;
+    flex-direction: column;
+    background: var(--darkest);
+    width: 100%;
+}
+footer .footer-about-us{
+    font-size: 2rem;
+    padding: 2rem;
+}
+footer .footer-about-us a{
+    color: var(--gray);
+}
+footer .footer-social{
+    font-size: 1.5rem;
+    padding: 0 2rem;
+    word-spacing: 1rem;
+}
+footer .footer-social a{
+    color: var(--gray);
 }
 
 /*viewport less then 750px*/
