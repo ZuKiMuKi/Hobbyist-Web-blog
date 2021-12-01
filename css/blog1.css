@@ -50,9 +50,6 @@ body{
 
 /*nav bar*/
 .nav{
-    position: sticky;
-    top: 0;
-    width: 100%;
     background: white;
     padding: 0 2rem;
     height: 0rem;
@@ -133,6 +130,7 @@ body{
 
 }
 .blog-topic img{
+    padding-right: 3rem;
     padding-left: 3rem;
 }
 .blog-topic h3{
@@ -178,9 +176,7 @@ footer .footer-social a{
     .nav .toggle-collapse{
         display: initial;
     }
-    .nav{
-        position: relative;
-    }
+    
     .blog-topic p{
         width: auto;
     }
