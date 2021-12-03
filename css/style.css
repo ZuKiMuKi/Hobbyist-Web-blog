@@ -22,6 +22,7 @@ a{
 h1{
     font-size: 2.5rem;
 }
+
 h3{
     font-size: 1.5rem;
 }
@@ -117,7 +118,7 @@ body{
 /*The site content*/
 
 main .site-title{
-    background: url('../assets/screenshot164.jpg');
+    background: url('../assets/o2jam_edit_1.jpg');
     background-size: cover;
     height: 110vh;
     display: flex;
@@ -125,11 +126,13 @@ main .site-title{
 }
 
 main .site-title h1{
-    margin: .3rem;
+    margin: .6rem;
+    font-size: 5.5rem;
     color: white;
 }
 main .site-title h3{
-    margin: .3rem;
+    margin: .4rem;
+    font-size: 2.5rem;
     color: white;
 }
 
@@ -144,7 +147,7 @@ main .site-title .btn:hover{
 }
 
 main .site-bg{
-    padding-top: 10rem;
+    padding-top: 18rem;
     text-align: center;
 }
 main .recent-post h1{
@@ -191,7 +194,9 @@ section .container .owl-nav{
     width: 100%;
     text-align: center;
     font-size: 2rem;
+    top: 5%;
 }
+
 /*footer*/
 footer{
     width: 100vw;
@@ -228,4 +233,18 @@ footer .footer-social a{
     .nav .toggle-collapse{
         display: initial;
     }
+    main .site-title h1{
+        margin: .6rem;
+        font-size: 2.5rem;
+        color: white;
+    }
+    main .site-title h3{
+        margin: .4rem;
+        font-size: 1.5rem;
+        color: white;
+    }
+    section .container .owl-nav{
+        top: 100%;
+    }
+
 }
