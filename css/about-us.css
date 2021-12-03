@@ -114,59 +114,42 @@ body{
 .nav .social i:hover{
     color: blue;
 }
-.sidenav {
-    width: 350px;
-    max-width: 100%;
-    height: auto;
-    position: fixed;
-    z-index: 1;
-    top: 20%;
-    left: 70%;
-    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
-    background: #eee;
-    border-radius: 0.5rem;
-  }
-.sidenav .sidenav-header{
-    background: var(--gny);
+.about-us{
+    width: 100%;
+}
+.about-us .about-us-header{
     text-align: center;
-    padding: 1rem;
-    border-radius: 0.5rem;
+    background: var(--gny);
+    padding: 2rem 2rem;
 }
-.sidenav p{
-    padding: 1rem;
+.about-us .about-us-header h1{
+    color: var(--dark);
 }
-.sidenav a{
-    color: var(--darkest);
+.about-us .who-are-we{
+    text-align: center;
+    padding: 2rem 3rem;
 }
-/*blog*/
-.blog-header h1{
-    padding: 0 3rem;
-}
-.blog-header p{
-    padding: 0 3rem;
-}
-.blog-topic h2{
-    padding: 1rem 3rem;
-}
-.blog-topic p{
-    padding: 0 3rem;
+.about-us .who-are-we p{
     width: 50%;
+    padding: 0 25%;
+}
+.zuki{
+    text-align: center;
+    padding: 2rem 3rem;
+}
+.zuki p{
+    width: 50%;
+    padding: 0 25%;
+}
+.aiy-obie{
+    text-align: center;
+    padding: 2rem 3rem;
+}
+.aiy-obie p{
+    width: 50%;
+    padding: 0 25%;
+}
 
-}
-.blog-topic img{
-    max-width: 70%;
-    height: auto;
-    padding-right: 3rem;
-    padding-left: 3rem;
-}
-.blog-topic h3{
-    padding-top: 2rem;
-    padding-left: 3rem;
-}
-.blog-topic a{
-    color: black;
-    font-size: 1.25rem;
-}
 /*footer*/
 footer{
     width: 100vw;
@@ -195,21 +178,19 @@ footer .footer-social a{
 }
 /*viewport less then 750px*/
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 700px){
     .nav .nav-menu, .nav .nav-items{
         flex-direction: column;
     }
     .nav .toggle-collapse{
         display: initial;
     }
-    
-    .blog-topic p{
-        width: auto;
+    .about-us .who-are-we p{
+        width: 100%;
+        padding: 0%;
     }
-   
-}
-@media only screen and (max-width: 1000px){
-    .sidenav{
-        display: none;
+    .zuki p{
+        width: 100%;
+        padding: 0%;
     }
 }

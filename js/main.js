@@ -10,7 +10,7 @@ $(document).ready(function(){
     /* owl carousel */
     $('.owl-carousel').owlCarousel({
         loop: true,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 3000,
         nav: true,
         navText: [$('.owl-navigation .owl-nav-back'),$('.owl-navigation .owl-nav-next')],

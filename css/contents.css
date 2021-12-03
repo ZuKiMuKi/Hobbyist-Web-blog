@@ -122,8 +122,8 @@ body{
     z-index: 1;
     top: 20%;
     left: 70%;
-    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
     background: #eee;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
     border-radius: 0.5rem;
   }
 .sidenav .sidenav-header{
@@ -138,35 +138,23 @@ body{
 .sidenav a{
     color: var(--darkest);
 }
-/*blog*/
-.blog-header h1{
-    padding: 0 3rem;
-}
-.blog-header p{
-    padding: 0 3rem;
-}
-.blog-topic h2{
+/*contents*/
+.header{
     padding: 1rem 3rem;
 }
-.blog-topic p{
-    padding: 0 3rem;
-    width: 50%;
+.clearfix{
+    padding-bottom: 2rem;
+    width: 70%;
+}
+.img {
+    float: left;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
 
-}
-.blog-topic img{
-    max-width: 70%;
-    height: auto;
-    padding-right: 3rem;
-    padding-left: 3rem;
-}
-.blog-topic h3{
-    padding-top: 2rem;
-    padding-left: 3rem;
-}
-.blog-topic a{
-    color: black;
-    font-size: 1.25rem;
-}
 /*footer*/
 footer{
     width: 100vw;
@@ -195,21 +183,19 @@ footer .footer-social a{
 }
 /*viewport less then 750px*/
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 700px){
     .nav .nav-menu, .nav .nav-items{
         flex-direction: column;
     }
     .nav .toggle-collapse{
         display: initial;
     }
-    
-    .blog-topic p{
-        width: auto;
-    }
-   
 }
 @media only screen and (max-width: 1000px){
     .sidenav{
         display: none;
+    }
+    .clearfix{
+        width: 90%;
     }
 }
